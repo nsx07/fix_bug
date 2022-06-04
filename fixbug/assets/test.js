@@ -34,15 +34,33 @@ function cadastrarUser() {
     var senha_confirma = document.getElementById('confirma_senha').value;
 
     if (senha == senha_confirma) {
-        if (email == undefined) {
-            usuarios = [{ email, senha }];
+        if (validaSenha() == 1) {
+            if (email == undefined) {
+                usuarios = [{ email, senha }];
+            }
+            if (validaEmail() == 1) {
+                for (i = 0; i < usuarios.length; i++) {
+                    if (usuarios[i].email == email) {
+                        alert('email já está em uso!')
+                        var em_uso = true
+                        break
+                    } else {
+                        em_uso = false
+                    }
+
+                }
+                if (em_uso == false) {
+                    usuarios.push({ email, senha });
+                    alert('cadastrou!');
+                    document.location = 'feed.html';
+                }
+            } else {
+                return;
+            }
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
         } else {
-            usuarios.push({ email, senha });
-            alert('cadastrou!');
-            document.location = 'feed.html';
+            return;
         }
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        console.log(usuarios);
     } else {
         alert('As senhas não são iguais');
     }
@@ -69,7 +87,7 @@ function logar_usuario() {
 }
 
 function armazena_usuario() {
-    return JSON.parse(localStorage.getItem('usuarios'));
+    return JSON.parse(localStorage.getItem("usuarios"));
 }
 
 function validacao() {
