@@ -7,15 +7,17 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #6F40CE;
-    box-shadow: 10px 0px 0px rgba(0,0,0,0.19);
+    box-shadow: 10px 0px 0px rgba(0, 0, 0, 0.19);
 }
+
 .logo {
     width: 150px;
     height: 50px;
     padding-top: 9px;
-    display: flex;
-    margin:auto;
+    display: flex inline;
+    margin: auto;
 }
+
 .deep {
     background-image: url('fundo.jpg');
     background-size: cover;
@@ -23,25 +25,29 @@
     height: 100vh;
     width: 100vw;
 }
+
 body {
     margin: 0;
 }
-.login  { 
+
+.login {
     position: relative;
     top: 20%;
     margin: auto;
     width: 20vw;
     height: max-content;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     /* border-radius: 7%; */
-    padding: 2%; 
+    padding: 2%;
     font-family: 'Roboto Flex', sans-serif;
     border-radius: 20px;
 }
+
 .titles {
     font-family: inherit;
     text-align: center;
 }
+
 .button {
     border-radius: 8px;
     border-color: #6F40CE;
@@ -57,6 +63,7 @@ body {
     height: 60px;
     cursor: pointer;
 }
+
 .box {
     font-family: inherit;
     font-size: medium;
@@ -66,9 +73,10 @@ body {
     height: 5vh;
     margin-bottom: 5px;
     border-radius: 10px;
-    box-shadow: 3px 3px rgba(0,0,0,0.19);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.19);
     /* box-shadow: 3px 3px rgba(0,0,0,0.19); */
 }
+
 #base {
     width: 98vw;
     height: 100vh;
@@ -77,8 +85,9 @@ body {
     background-size: cover;
     border-radius: 7px;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.30);
-    box-shadow: 0 5px 5px rgba(2,2,2,0.30);
+    box-shadow: 0 5px 5px rgba(2, 2, 2, 0.30);
 }
+
 .input {
     color: #6F40CE;
     text-align: justify;
