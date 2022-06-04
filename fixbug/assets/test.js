@@ -26,23 +26,25 @@ function validaEmail() {
         }
     }
 }
-usuarios = armazena_usuario()
+var usuarios = armazena_usuario();
 
 function cadastrarUser() {
-    var email = document.getElementById('email').value
-    var senha = document.getElementById('senha').value
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
     var senha_confirma = document.getElementById('confirma_senha').value;
 
     if (senha == senha_confirma) {
         if (email == undefined) {
-            usuarios = [{ email, senha }]
+            usuarios = [{ email, senha }];
         } else {
-            usuarios.push({ email, senha })
-            document.location = 'feed.html'
+            usuarios.push({ email, senha });
+            alert('cadastrou!');
+            document.location = 'feed.html';
         }
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        console.log(usuarios);
     } else {
-        alert('As senhas não são iguais')
+        alert('As senhas não são iguais');
     }
 }
 
@@ -62,12 +64,12 @@ function logar_usuario() {
         }
 
     }
-    alert('Email e senha inexistem!')
-    console.log(email, senha)
+    alert('Email e senha inexistem!');
+    console.log(email, senha);
 }
 
 function armazena_usuario() {
-    return JSON.parse(localStorage.getItem('usuarios'))
+    return JSON.parse(localStorage.getItem('usuarios'));
 }
 
 function validacao() {
@@ -78,5 +80,5 @@ function validacao() {
     } else {
         console.log('Dados invalidos');
     }
-    logar_usuario()
+    logar_usuario();
 }
