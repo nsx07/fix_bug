@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    height: max-content;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #6F40CE;
+    box-shadow: 10px 0px 0px rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+}
+
+.entrar {
+    left: 0;
+    color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-right: 5px;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    padding-top: 9px;
+    justify-self: center;
+    align-self: center;
+    /*margin: auto;*/
+}
+
+.main {
+    position: relative;
+    /* top: 10vh; */
+    /* border: solid 1px; */
+    width: 25vw;
+    height: max-content;
+    border-radius: 7px;
+    box-shadow: 0 7px 7px rgba(1, 1, 1, 0.25);
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    display: inline-flex;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.post {
+    margin: 0 0 5% 0;
+    border: solid #999 1px;
+    width: 100%;
+    height: max-content;
+    justify-items: center;
+    /* box-shadow: 0 3px 3px rgba(1, 1, 1, 0.25); */
+}
+.itens {
+    justify-content: space-between;
+    width: max-content;
+    margin: auto;
+}
