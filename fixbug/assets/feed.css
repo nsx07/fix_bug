@@ -7,7 +7,7 @@ body {
 .header {
     display: flex;
     height: max-content;
-    width: 98.9vw;
+    width: 100vw;
     background-color: #6F40CE;
 }
 
@@ -25,7 +25,9 @@ body {
     color: aliceblue!important;
     width: max-content;
     height: max-content;
-    padding: 10px;
+    position: relative;
+    bottom: 1.5vh;
+    margin: 10px;
     font-family: 'Roboto Flex', 'Arial';
 }
 
@@ -82,8 +84,27 @@ body {
     margin: 1vw;
 }
 
-.icon-perfil {
+.center-item {
     margin: auto;
     width: max-content;
     height: max-content;
+}
+
+.titulos {
+    font-family: 'Roboto Flex', 'Arial';
+    text-align: center;
+}
+
+.mensagens {
+    position: relative;
+    bottom: 1.4vh;
+}
+
+.campo-escrever-problema {
+    position: static
+}
+
+.box-texto {
+    border-radius: 7px;
+    width: 100%;
 }

@@ -17,18 +17,45 @@
     <header class="header">
         <div id="info-header" class="info-header">
             <img id="logo" class="logo" src="images/FixBug_semFundo.png" alt="logotipo">
-            <a class="entrar" href="login.html">Entrar</a>
+            <div id="login-sign">
+                <a class="entrar" href="login.html">Entrar</a>
+                <img src="images/user32.png" width="40px" height="40px">
+            </div>
         </div>
     </header>
     <main id="itens" class="itens">
         <div id="perfil" class="perfil main">
-            <div id="" class="icon-perfil">
-                <img src="images/user.png">
+            <div id="" class="center-item">
+                <img src="images/user128.png"><br>
+                <span class="titulos">Mark Zukemberg</span>
             </div>
+            <hr>
+            <div id="avaliacao" class="center-item">
+                <p class="titulos">Avaliação</p>
+                <div id="estrelas">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                    <img src="images/star.png">
+                </div>
+            </div>
+            <hr>
         </div>
         <div id="chamados">
             <div id="abrir-chamado" class="abrir-chamado main">
-                Abrir chamado
+                <div id="campo-escrever-problema" class="campo-escrever-problema">
+                    <span> Selecione em qual dispositivo está tendo problemas.</span>
+                    <ul id="dispositivos">
+                        <label for="desktop"><img src="images/monitor.png"></label>
+                        <input id="desktop" type="checkbox">
+                        <label for="laptop"><img src="images/laptop .png"></label>
+                        <input id="laptop" type="checkbox">
+                        <label for="printer"><img src="images/print.png"></label>
+                        <input id="printer" type="checkbox">
+                    </ul><br>
+                    <input class="box-texto" type="text" placeholder="Digite aqui seu problema...">
+                </div>
             </div>
             <div id="feed" class="abrir-chamado main">
                 <div id="post" class="post">
@@ -39,31 +66,61 @@
                     Lorem
                 </div>
                 <hr>
-                <div id="post" class="post">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem est maiores molestiae commodi ad sapiente saepe, consequuntur fuga impedit sint repudiandae tempore dicta dignissimos officiis animi ipsum obcaecati odit excepturi? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Dolore illum inventore numquam omnis nostrum possimus corporis voluptates harum facere non, exercitationem soluta ut, atque veniam explicabo qui amet ex perspiciatis. Lorem ipsum, dolor sit amet
-                    consectetur
-                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi doloremque nesciunt ipsam tenetur cumque natus animi facere sapiente maxime pariatur voluptate, veritatis repellendus sed placeat facilis error! Eius, fugit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore voluptatum suscipit, debitis similique id natus praesentium porro! Optio cupiditate iusto omnis, delectus architecto nulla rerum nostrum tempore exercitationem
-                    ab.
-                </div>
-                <hr>
-                <div id="post" class="post">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem est maiores molestiae commodi ad sapiente saepe, consequuntur fuga impedit sint repudiandae tempore dicta dignissimos officiis animi ipsum obcaecati odit excepturi? Lorem ipsum dolor
-                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi doloremque nesciunt ipsam tenetur cumque natus animi facere sapiente maxime pariatur voluptate, veritatis repellendus sed placeat facilis error! Eius, fugit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore voluptatum suscipit, debitis similique id natus praesentium porro! Optio cupiditate iusto omnis, delectus architecto nulla rerum nostrum tempore exercitationem
-                    ab.
-                </div>
             </div>
         </div>
         <div id="chat" class="chat main">
-            <div id="" class="">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem est maiores molestiae commodi ad sapiente saepe, consequuntur fuga impedit sint repudiandae tempore dicta dignissimos officiis animi ipsum obcaecati odit excepturi? Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Dolore illum inventore numquam omnis nostrum possimus corporis voluptates harum facere non, exercitationem soluta ut, atque veniam explicabo qui amet ex perspiciatis. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Soluta eaque esse nesciunt qui dolorum illum adipisci libero, ratione quisquam culpa doloremque enim voluptatem laboriosam non quasi quibusdam repellat porro. Repellat.
-                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi doloremque nesciunt ipsam tenetur cumque natus animi facere sapiente maxime pariatur voluptate, veritatis repellendus sed placeat facilis error! Eius, fugit. Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Accusamus inventore voluptatum suscipit, debitis similique id natus praesentium porro! Optio cupiditate iusto omnis, delectus architecto nulla rerum nostrum tempore exercitationem ab.
+            <p class="titulos">CHAT</p>
+            <hr>
+            <div id="conversa">
+                <div id="foto-nome">
+                    <img src="images/user32.png">
+                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                </div>
+                <div id="mensagem">
+                    <span>Olá, MARK! Como vai?</span>
+                </div>
             </div>
+            <hr>
+            <div id="conversa">
+                <div id="foto-nome">
+                    <img src="images/user32.png">
+                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                </div>
+                <div id="mensagem">
+                    <span>Olá, MARK! Como vai?</span>
+                </div>
+            </div>
+            <hr>
+            <div id="conversa">
+                <div id="foto-nome">
+                    <img src="images/user32.png">
+                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                </div>
+                <div id="mensagem">
+                    <span>Olá, MARK! Como vai?</span>
+                </div>
+            </div>
+            <hr>
+            <div id="conversa">
+                <div id="foto-nome">
+                    <img src="images/user32.png">
+                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                </div>
+                <div id="mensagem">
+                    <span>Olá, MARK! Como vai?</span>
+                </div>
+            </div>
+            <hr>
+            <div id="conversa">
+                <div id="foto-nome">
+                    <img src="images/user32.png">
+                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                </div>
+                <div id="mensagem">
+                    <span>Olá, MARK! Como vai?</span>
+                </div>
+            </div>
+            <hr>
         </div>
     </main>
 </body>
