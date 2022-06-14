@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&family=Roboto:wght@100;300&display=swap');
 body {
     margin: 0;
     width: 98.9vw;
@@ -16,8 +17,8 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #5B10AB;
-    margin: 10px auto 10px auto;
-    padding: 3px;
+    margin: 1vh auto 1vh auto;
+    padding: 0 1vw 0 1vw;
     border-radius: 7px;
 }
 
@@ -28,7 +29,7 @@ body {
     position: relative;
     bottom: 1.5vh;
     margin: 10px;
-    font-family: 'Roboto Flex', 'Arial';
+    font-family: 'Roboto', 'Arial';
 }
 
 .logo {
@@ -47,6 +48,7 @@ body {
     /*border: solid #aaa 0.80px;*/
     height: max-content;
     justify-items: center;
+    position: relative;
 }
 
 .itens {
@@ -95,7 +97,12 @@ body {
     text-align: center;
 }
 
+.semi-titulos {
+    font-family: 'Roboto', 'Arial';
+}
+
 .mensagens {
+    margin-top: 2vh;
     position: relative;
     bottom: 1.4vh;
 }
@@ -107,4 +114,19 @@ body {
 .box-texto {
     border-radius: 7px;
     width: 100%;
+    border: none;
+    background-color: #ccc;
+    height: 3vh;
+    font-family: 'Roboto';
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }

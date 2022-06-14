@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/feed.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/FB.png">
-    <title>Seja bem vindo a FixBug!</title>
+    <title>FixBug</title>
 </head>
 
 <body>
@@ -45,27 +45,69 @@
         <div id="chamados">
             <div id="abrir-chamado" class="abrir-chamado main">
                 <div id="campo-escrever-problema" class="campo-escrever-problema">
-                    <span> Selecione em qual dispositivo está tendo problemas.</span>
-                    <ul id="dispositivos">
-                        <label for="desktop"><img src="images/monitor.png"></label>
-                        <input id="desktop" type="checkbox">
-                        <label for="laptop"><img src="images/laptop .png"></label>
-                        <input id="laptop" type="checkbox">
-                        <label for="printer"><img src="images/print.png"></label>
-                        <input id="printer" type="checkbox">
-                    </ul><br>
+                    <span class="semi-titulos"> Selecione em qual dispositivo está tendo problemas.</span>
+                    <ul id="dispositivos" class="flex-space-between">
+                        <li>
+                            <label for="desktop"><img src="images/monitor.png"></label>
+                            <input id="desktop" type="checkbox"></li>
+                        <li>
+                            <label for="laptop"><img src="images/laptop .png"></label>
+                            <input id="laptop" type="checkbox">
+                        </li>
+                        <li>
+                            <label for="printer"><img src="images/print.png"></label>
+                            <input id="printer" type="checkbox">
+                        </li>
+                    </ul>
                     <input class="box-texto" type="text" placeholder="Digite aqui seu problema...">
+                    <ul id="anexar" class="flex-space-between semi-titulos">
+                        <li>
+                            Foto
+                        </li>
+                        <li>
+                            Vídeo
+                        </li>
+                        <li>
+                            Link
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="feed" class="abrir-chamado main">
                 <div id="post" class="post">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem est maiores molestiae commodi ad sapiente saepe, consequuntur fuga impedit sint repudiandae tempore dicta dignissimos officiis animi ipsum obcaecati odit excepturi? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Dolore illum inventore numquam omnis nostrum possimus corporis voluptates harum facere non, exercitationem soluta ut, atque veniam explicabo qui amet ex perspiciatis. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Soluta eaque esse nesciunt qui dolorum illum adipisci libero, ratione quisquam culpa doloremque enim voluptatem laboriosam non quasi quibusdam repellat porro. Repellat.
-                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi doloremque nesciunt ipsam tenetur cumque natus animi facere sapiente maxime pariatur voluptate, veritatis repellendus sed placeat facilis error! Eius, fugit.
-                    Lorem
+                    <div id="foto-nome">
+                        <img src="images/user32.png" width="32px" height="32px">
+                        <span class="mensagens"><span class="titulos">Mark Zukemberg</span>
+                        <!--<span class="semi-titulos"> - Especialista em manutençao de desktop</span>--></span>
+                    </div>
+                    <div id="conteudo-post" class="mensagens semi-titulos">
+                        Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    </div>
                 </div>
                 <hr>
+                <div id="post" class="post">
+                    <div id="foto-nome">
+                        <img src="images/user32.png" width="32px" height="32px">
+                        <span class="mensagens"><span class="titulos">Mark Zukemberg</span>
+                        <!--<span class="semi-titulos"> - Especialista em manutençao de desktop</span>--></span>
+                    </div>
+                    <div id="conteudo-post" class="mensagens semi-titulos">
+                        Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    </div>
+                </div>
+                <hr>
+                <div id="post" class="post">
+                    <div id="foto-nome">
+                        <img src="images/user32.png" width="32px" height="32px">
+                        <span class="mensagens"><span class="titulos">Mark Zukemberg</span>
+                        <!--<span class="semi-titulos"> - Especialista em manutençao de desktop</span>--></span>
+                    </div>
+                    <div id="conteudo-post" class="mensagens semi-titulos">
+                        Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    </div>
+                </div>
+                <hr>
+
             </div>
         </div>
         <div id="chat" class="chat main">
@@ -84,7 +126,7 @@
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                    <span class="mensagens"><strong>Jeff Bezos</strong></span><br>
                 </div>
                 <div id="mensagem">
                     <span>Olá, MARK! Como vai?</span>
@@ -94,7 +136,7 @@
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                    <span class="mensagens"><strong>Elon Musk</strong></span><br>
                 </div>
                 <div id="mensagem">
                     <span>Olá, MARK! Como vai?</span>
@@ -104,7 +146,7 @@
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                    <span class="mensagens"><strong>Kin Jong'n</strong></span><br>
                 </div>
                 <div id="mensagem">
                     <span>Olá, MARK! Como vai?</span>
@@ -114,7 +156,7 @@
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                    <span class="mensagens"><strong>Putin</strong></span><br>
                 </div>
                 <div id="mensagem">
                     <span>Olá, MARK! Como vai?</span>
