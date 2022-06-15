@@ -64,12 +64,16 @@ function cadastrarUser() {
                         }
                     }
                 } else {
-                    alert('email inválido');
+                    return;
                 }
             } else {
-                alert('As senhas não são iguais');
+                return;
             }
+        } else {
+            senha = document.getElementById('confirma_senha');
+            senha.innerHTML = '';
         }
+
     }
 }
 
