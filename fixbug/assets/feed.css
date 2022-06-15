@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&family=Roboto:wght@100;300&display=swap');
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 .header {
@@ -17,24 +15,24 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #5B10AB;
-    margin: 1vh auto 1vh auto;
-    padding: 0 1vw 0 1vw;
-    border-radius: 7px;
+    margin: 1vh auto;
+    padding: 0 0.5vw;
+    border-radius: 10px;
 }
 
 .entrar {
     color: aliceblue!important;
     width: max-content;
     height: max-content;
-    position: relative;
-    bottom: 1.5vh;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
     font-family: 'Roboto', 'Arial';
+    font-weight: 1000;
 }
 
 .logo {
     width: 120px;
     height: 40px;
+    left: 0!important;
 }
 
 .main {
@@ -45,10 +43,18 @@ body {
 
 .post {
     margin: 0 0 5% 0;
-    /*border: solid #aaa 0.80px;*/
     height: max-content;
     justify-items: center;
-    position: relative;
+}
+
+#conteudo-post {
+    padding: 1%;
+}
+
+#interacoes {
+    border: solid 1px rgba(1, 1, 1, 0.25);
+    border-radius: 10px;
+    padding: 1vh 1vw;
 }
 
 .itens {
@@ -94,30 +100,28 @@ body {
 
 .titulos {
     font-family: 'Roboto Flex', 'Arial';
-    text-align: center;
+    margin-left: 1vw;
 }
 
 .semi-titulos {
     font-family: 'Roboto', 'Arial';
-}
-
-.mensagens {
-    margin-top: 2vh;
-    position: relative;
-    bottom: 1.4vh;
+    font-weight: 500;
 }
 
 .campo-escrever-problema {
-    position: static
+    position: static;
 }
 
 .box-texto {
     border-radius: 7px;
     width: 100%;
     border: none;
-    background-color: #ccc;
-    height: 3vh;
+    background-color: #dddddd;
+    height: max-content;
     font-family: 'Roboto';
+    word-wrap: break-word;
+    outline: none;
+    text-indent: 1vw;
 }
 
 .flex-space-between {
@@ -126,7 +130,10 @@ body {
     justify-content: space-around;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#foto-nome {
+    display: flex;
+}
+
+#anexar {
+    padding: 2%;
 }

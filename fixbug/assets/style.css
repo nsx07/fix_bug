@@ -14,11 +14,17 @@
     margin: auto;
 }
 
+.login-logo {
+    border-radius: 90px;
+    margin: auto;
+    align-self: center;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto Flex', sans-serif;
-    background-image: url('../images/fundo.jpg');
-    background-size: cover;
+    /*background-image: url('../images/fundo.jpg');
+    background-size: cover;*/
     position: static;
     height: 100vh;
     width: 100vw;
@@ -34,6 +40,15 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     padding: 2%;
     border-radius: 20px;
+    background-image: url('../images/fundo.jpg');
+    background-size: cover;
+}
+
+.center-item {
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    margin: 1vh auto 1vh auto;
 }
 
 .titulos {
@@ -74,7 +89,9 @@ body {
     margin-bottom: 5px;
     border-radius: 10px;
     outline: none;
+    font-family: 'Roboto';
     box-shadow: 3px 3px rgba(0, 0, 0, 0.19);
+    text-indent: 1vw;
 }
 
 .box:focus {

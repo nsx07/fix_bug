@@ -17,10 +17,8 @@
     <header class="header">
         <div id="info-header" class="info-header">
             <img id="logo" class="logo" src="images/FixBug_semFundo.png" alt="logotipo">
-            <div id="login-sign">
-                <a class="entrar" href="login.html">Entrar</a>
-                <img src="images/user32.png" width="40px" height="40px">
-            </div>
+            <a class="entrar" href="login.html">Entrar</a>
+            <!--<img src="images/user32.png" width="40px" height="40px">-->
         </div>
     </header>
     <main id="itens" class="itens">
@@ -46,31 +44,20 @@
             <div id="abrir-chamado" class="abrir-chamado main">
                 <div id="campo-escrever-problema" class="campo-escrever-problema">
                     <span class="semi-titulos"> Selecione em qual dispositivo está tendo problemas.</span>
-                    <ul id="dispositivos" class="flex-space-between">
-                        <li>
-                            <label for="desktop"><img src="images/monitor.png"></label>
-                            <input id="desktop" type="checkbox"></li>
-                        <li>
-                            <label for="laptop"><img src="images/laptop .png"></label>
-                            <input id="laptop" type="checkbox">
-                        </li>
-                        <li>
-                            <label for="printer"><img src="images/print.png"></label>
-                            <input id="printer" type="checkbox">
-                        </li>
-                    </ul>
+                    <div id="dispositivos" class="flex-space-between">
+                        <label for="desktop"><img src="images/monitor.png"></label>
+                        <input id="desktop" type="checkbox">
+                        <label for="laptop"><img src="images/laptop .png"></label>
+                        <input id="laptop" type="checkbox">
+                        <label for="printer"><img src="images/print.png"></label>
+                        <input id="printer" type="checkbox">
+                    </div>
                     <input class="box-texto" type="text" placeholder="Digite aqui seu problema...">
-                    <ul id="anexar" class="flex-space-between semi-titulos">
-                        <li>
-                            Foto
-                        </li>
-                        <li>
-                            Vídeo
-                        </li>
-                        <li>
-                            Link
-                        </li>
-                    </ul>
+                    <div id="anexar" class="flex-space-between semi-titulos">
+                        <button>Foto</button>
+                        <button>Vídeo</button>
+                        <button>Link</button>
+                    </div>
                 </div>
             </div>
             <div id="feed" class="abrir-chamado main">
@@ -83,16 +70,10 @@
                     <div id="conteudo-post" class="mensagens semi-titulos">
                         Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
                     </div>
-                </div>
-                <hr>
-                <div id="post" class="post">
-                    <div id="foto-nome">
-                        <img src="images/user32.png" width="32px" height="32px">
-                        <span class="mensagens"><span class="titulos">Mark Zukemberg</span>
-                        <!--<span class="semi-titulos"> - Especialista em manutençao de desktop</span>--></span>
-                    </div>
-                    <div id="conteudo-post" class="mensagens semi-titulos">
-                        Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    <div id="interacoes" class="flex-space-between">
+                        <button>CURTIR</button>
+                        <button>COMENTAR</button>
+                        <button>PROPOSTA</button>
                     </div>
                 </div>
                 <hr>
@@ -104,6 +85,27 @@
                     </div>
                     <div id="conteudo-post" class="mensagens semi-titulos">
                         Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    </div>
+                    <div id="interacoes">
+                        <button>CURTIR</button>
+                        <button>COMENTAR</button>
+                        <button>PROPOSTA</button>
+                    </div>
+                </div>
+                <hr>
+                <div id="post" class="post">
+                    <div id="foto-nome">
+                        <img src="images/user32.png" width="32px" height="32px">
+                        <span class="mensagens"><span class="titulos">Mark Zukemberg</span>
+                        <!--<span class="semi-titulos"> - Especialista em manutençao de desktop</span>--></span>
+                    </div>
+                    <div id="conteudo-post" class="semi-titulos">
+                        Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
+                    </div>
+                    <div id="interacoes">
+                        <button>CURTIR</button>
+                        <button>COMENTAR</button>
+                        <button>PROPOSTA</button>
                     </div>
                 </div>
                 <hr>
@@ -114,50 +116,50 @@
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Bill Gates</strong></span><br>
+                    <span class="mensagens titulos">Bill Gates</span><br>
                 </div>
                 <div id="mensagem">
-                    <span>Olá, MARK! Como vai?</span>
+                    <span class="semi-titulos">Olá, MARK! Como vai?</span>
                 </div>
             </div>
             <hr>
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Jeff Bezos</strong></span><br>
+                    <span class="mensagens titulos">Jeff Bezos</span><br>
                 </div>
                 <div id="mensagem">
-                    <span>Olá, MARK! Como vai?</span>
+                    <span class="semi-titulos">Olá, MARK! Como vai?</span>
                 </div>
             </div>
             <hr>
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Elon Musk</strong></span><br>
+                    <span class="mensagens titulos">Elon Musk</span><br>
                 </div>
                 <div id="mensagem">
-                    <span>Olá, MARK! Como vai?</span>
+                    <span class="semi-titulos">Olá, MARK! Como vai?</span>
                 </div>
             </div>
             <hr>
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Kin Jong'n</strong></span><br>
+                    <span class="mensagens titulos">Kin Jong'n</span><br>
                 </div>
                 <div id="mensagem">
-                    <span>Olá, MARK! Como vai?</span>
+                    <span class="semi-titulos">Olá, MARK! Como vai?</span>
                 </div>
             </div>
             <hr>
             <div id="conversa">
                 <div id="foto-nome">
                     <img src="images/user32.png">
-                    <span class="mensagens"><strong>Putin</strong></span><br>
+                    <span class="mensagens titulos">Putin</span><br>
                 </div>
                 <div id="mensagem">
-                    <span>Olá, MARK! Como vai?</span>
+                    <span class="semi-titulos">Olá, MARK! Como vai?</span>
                 </div>
             </div>
             <hr>
