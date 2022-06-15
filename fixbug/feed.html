@@ -44,14 +44,11 @@
             <div id="abrir-chamado" class="abrir-chamado main">
                 <div id="campo-escrever-problema" class="campo-escrever-problema">
                     <span class="semi-titulos"> Selecione em qual dispositivo está tendo problemas.</span>
-                    <div id="dispositivos" class="flex-space-between">
-                        <label for="desktop"><img src="images/monitor.png"></label>
-                        <input id="desktop" type="checkbox">
-                        <label for="laptop"><img src="images/laptop .png"></label>
-                        <input id="laptop" type="checkbox">
-                        <label for="printer"><img src="images/print.png"></label>
-                        <input id="printer" type="checkbox">
-                    </div>
+                    <select id="dispotivos">
+                        <option>Desktop</option>
+                        <option>Notebook</option>
+                        <option>Impressora</option>
+                    </select>
                     <input class="box-texto" type="text" placeholder="Digite aqui seu problema...">
                     <div id="anexar" class="flex-space-between semi-titulos">
                         <button>Foto</button>
@@ -86,7 +83,7 @@
                     <div id="conteudo-post" class="mensagens semi-titulos">
                         Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
                     </div>
-                    <div id="interacoes">
+                    <div id="interacoes" class="flex-space-between">
                         <button>CURTIR</button>
                         <button>COMENTAR</button>
                         <button>PROPOSTA</button>
@@ -102,7 +99,7 @@
                     <div id="conteudo-post" class="semi-titulos">
                         Estou tendo problemas com meu desktop, está dando problema na tela, fica piscando incessantemente, estou trabalhando em home-office e preciso de um profissional urgente, pago o que for preciso para resolver esse problema o quanto antes.
                     </div>
-                    <div id="interacoes">
+                    <div id="interacoes" class="flex-space-between">
                         <button>CURTIR</button>
                         <button>COMENTAR</button>
                         <button>PROPOSTA</button>

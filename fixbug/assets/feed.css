@@ -137,3 +137,8 @@ body {
 #anexar {
     padding: 2%;
 }
+
+#dispotivos {
+    outline: none;
+    margin: 1vh;
+}
