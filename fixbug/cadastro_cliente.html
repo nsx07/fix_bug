@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/FB.png">
+    <title>Cadastre-se e consiga um help para seu problema!</title>
     <script src="assets/validaacoes.js"></script>
 </head>
 
@@ -17,21 +18,31 @@
         <img class="logo" src="images/FixBug_semFundo.png">
     </header>
     <main id="cadastro_cliente" class="block-input">
-        <h1 class="titles">Cadastre-se</h1>
+        <h1 class="titulos">Cadastre-se</h1>
         <div id="input-group">
-            <label for="nome">Nome</label>
-            <input class="box" id="nome" type="text"><br>
-            <label for="telefone">Telefone</label>
-            <input class="box" id="telefone" type="tel"><br>
-            <label for="email">Email</label>
-            <input class="box" id="email" type="text"><br>
-            <label for="senha">Senha</label>
-            <input class="box" id="senha" type="password"><br>
-            <label for="confirma_senha">Confirme a senha</label>
-            <input class="box" id="confirma_senha" type="password">
+            <div>
+                <label for="nome">Nome</label>
+                <input class="box" id="nome" type="text"><br>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input class="box" id="telefone" type="tel"><br>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="box" id="email" type="text"><br>
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input class="box" id="senha" type="password"><br>
+            </div>
+            <div>
+                <label for="confirma_senha">Confirme a senha</label>
+                <input class="box" id="confirma_senha" type="password">
+            </div>
         </div>
         <button class="button" onclick="cadastrarUser()">Enviar</button>
-        <h4 class="titles">Já tem conta?<a target="_self" href="login.html">Faça o login</a></h4>
+        <h4 class="semi-titulos">Já tem conta?<a target="_self" href="login.html">Faça o login</a></h4>
     </main>
 </body>
 
