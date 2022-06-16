@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&family=Roboto:wght@100;300&display=swap');
 body {
     margin: 0;
+    outline: none;
 }
 
 a {
@@ -55,12 +56,6 @@ a {
     padding: 1%;
 }
 
-#interacoes {
-    border: solid 1px rgba(1, 1, 1, 0.25);
-    border-radius: 10px;
-    padding: 1vh 1vw;
-}
-
 .itens {
     justify-content: space-between;
     width: max-content;
@@ -70,7 +65,7 @@ a {
 }
 
 #chamados {
-    width: 30vw;
+    width: 35vw;
 }
 
 .abrir-chamado {
@@ -100,10 +95,12 @@ a {
     margin: auto;
     width: max-content;
     height: max-content;
+    text-align: center;
 }
 
 .titulos {
     font-family: 'Roboto Flex', 'Arial';
+    text-align: center;
 }
 
 .semi-titulos {
@@ -122,13 +119,52 @@ a {
     background-color: #dddddd;
     height: max-content;
     font-family: 'Roboto';
-    word-wrap: break-word;
     outline: none;
     text-indent: 1vw;
+    margin: 1% 0 1% 0;
 }
 
 .flex-space-between {
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
+}
+
+#foto-nome {
+    margin-top: 1vh;
+    display: flex;
+}
+
+.nome-center {
+    margin: 1vh 0 0 1vw;
+}
+
+.butao {
+    background: #6F40CE;
+    border: none;
+    border-radius: 5px;
+}
+
+#conteudo-proposta {
+    text-align: right;
+    align-items: right;
+}
+
+#mensagem {
+    margin: 1vh;
+}
+
+#problema {
+    display: flex;
+    margin: 1vh;
+}
+
+#propostas {
+    margin: 1vh;
+}
+
+details {
+    border: solid 0.2px #ccc;
+    border-radius: 6px;
+    padding: 6px;
 }
