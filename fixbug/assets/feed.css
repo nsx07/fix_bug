@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     height: max-content;
@@ -100,7 +104,6 @@ body {
 
 .titulos {
     font-family: 'Roboto Flex', 'Arial';
-    margin-left: 1vw;
 }
 
 .semi-titulos {
@@ -128,21 +131,4 @@ body {
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
-}
-
-#foto-nome {
-    display: flex;
-}
-
-#anexar {
-    padding: 2%;
-}
-
-#dispotivos {
-    outline: none;
-    margin: 1vh;
-}
-
-a {
-    text-decoration: none;
 }
