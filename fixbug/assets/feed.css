@@ -140,9 +140,12 @@ a {
 }
 
 .butao {
-    background: #6F40CE;
+    background-color: #6F40CE;
+    color: #fff;
     border: none;
     border-radius: 5px;
+    width: 50%;
+    height: 30%;
 }
 
 #conteudo-proposta {
@@ -167,4 +170,17 @@ details {
     border: solid 0.2px #ccc;
     border-radius: 6px;
     padding: 6px;
+}
+
+.notify {
+    background-color: #5B10AB;
+    border-color: #5B10AB;
+    border-radius: 7px;
+}
+
+img.markinho {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
 }

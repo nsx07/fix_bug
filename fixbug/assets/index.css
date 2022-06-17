@@ -20,7 +20,7 @@ a {
     font-size: xx-large;
     border-color: rgb(217, 147, 250);
     border-radius: 10px;
-    text-emphasis: blueviolet;
+    /*text-emphasis: blueviolet;*/
     width: 27vw;
     height: 80px;
     margin-bottom: 20px;

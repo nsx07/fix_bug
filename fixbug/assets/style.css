@@ -40,8 +40,8 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     padding: 2%;
     border-radius: 20px;
-    background-image: url('../images/fundo.jpg');
-    background-size: cover;
+    background-color: #eeeeee;
+    ;
 }
 
 .center-item {
@@ -71,6 +71,7 @@ a {
     border-radius: 8px;
     border-color: #6F40CE;
     background-color: #6F40CE;
+    color: #fff;
     margin-top: 7%;
     padding: auto;
     text-align: center;
@@ -106,8 +107,8 @@ a {
     width: 98vw;
     height: 100vh;
     margin: auto;
-    background-image: url(/main/fundo.jpg);
-    background-size: cover;
+    background-color: #6F40CE;
+    /*background-size: cover;*/
     border-radius: 7px;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.30);
     box-shadow: 0 5px 5px rgba(2, 2, 2, 0.30);
