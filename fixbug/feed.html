@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/feed.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/FB.png">
+    <script src="assets/validaacoes.js">
+    </script>
     <title>FixBug</title>
 </head>
 
@@ -21,6 +23,7 @@
             <!--<a class="entrar" href="login.html">Entrar</a>-->
         </div>
     </header>
+
     <main id="itens" class="itens">
         <div id="perfil" class="perfil main">
             <div id="profile" class="center-item">
@@ -108,15 +111,15 @@
                 <div id="campo-escrever-problema" class="campo-escrever-problema">
                     <span class="semi-titulos"> Selecione em qual dispositivo está tendo problemas.</span>
                     <select id="dispotivos">
-                        <option>Desktop</option>
-                        <option>Notebook</option>
-                        <option>Impressora</option>
-                    </select>
+                            <option>Desktop</option>
+                            <option>Notebook</option>
+                            <option>Impressora</option>
+                        </select>
                     <textarea cols="30" rows="5" class="box-texto" type="text" wrap="hard" placeholder="Digite aqui seu problema..."></textarea>
-                    <div id="anexar" class="flex-space-between semi-titulos">
-                        <button><img src="images/gallery.png"><span class="nome-center">Foto</span></button>
-                        <button><img src="images/youtube.png"><span class="nome-center">Vídeo</span></button>
-                        <button><img src="images/filter.png"><span class="nome-center">Filtros</span></button>
+                    <div id="anexar" class="flex-space-between">
+                        <button><img src="images/gallery.png"><span class="semi-titulos nome-center">Foto</span></button>
+                        <button><img src="images/youtube.png"><span class="semi-titulos nome-center">Vídeo</span></button>
+                        <button><img src="images/filter.png"><span class="semi-titulos nome-center">Filtros</span></button>
                     </div>
                 </div>
             </div>
@@ -137,8 +140,9 @@
                     <div id="interacoes" class="flex-space-between">
                         <button><img src="images/like.png"><span class="nome-center">Curtir</span></button>
                         <button><img src="images/comment.png"><span class="nome-center">Comentar</span></button>
-                        <button><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
+                        <button onclick="prop()"><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
                     </div>
+                    <div class="proposta"></div>
                     <hr>
                     <div id="foto-nome">
                         <img src="images/user32.png" width="32px" height="32px">
@@ -155,8 +159,9 @@
                     <div id="interacoes" class="flex-space-between">
                         <button><img src="images/like.png"><span class="nome-center">Curtir</span></button>
                         <button><img src="images/comment.png"><span class="nome-center">Comentar</span></button>
-                        <button><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
+                        <button onclick="prop()"><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
                     </div>
+                    <div class="proposta"></div>
                     <hr>
                     <div id="foto-nome">
                         <img src="images/user32.png" width="32px" height="32px">
@@ -173,8 +178,9 @@
                     <div id="interacoes" class="flex-space-between">
                         <button><img src="images/like.png"><span class="nome-center">Curtir</span></button>
                         <button><img src="images/comment.png"><span class="nome-center">Comentar</span></button>
-                        <button><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
+                        <button onclick="prop()"><img src="images/edit.png"><span class="nome-center">Proposta</span></button>
                     </div>
+                    <div class="proposta"></div>
                 </div>
             </div>
         </div>
@@ -221,6 +227,7 @@
             <hr>
         </div>
     </main>
+
 </body>
 
 </html>

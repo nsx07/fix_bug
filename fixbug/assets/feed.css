@@ -2,6 +2,7 @@
 body {
     margin: 0;
     outline: none;
+    background-color: rgba(200, 200, 200, 0.35);
 }
 
 a {
@@ -44,6 +45,7 @@ a {
     border-radius: 7px;
     box-shadow: 0 7px 7px rgba(1, 1, 1, 0.25);
     border: solid 0.7px #aaa;
+    background-color: #fff/*rgba(111, 64, 206, 0)*/
 }
 
 .post {
@@ -170,6 +172,7 @@ details {
     border: solid 0.2px #ccc;
     border-radius: 6px;
     padding: 6px;
+    font-family: 'Roboto';
 }
 
 .notify {

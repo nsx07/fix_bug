@@ -111,3 +111,8 @@ function validacao() {
     }
     logar_usuario();
 }
+
+function prop() {
+    purpose = document.getElementsByClassName('proposta')
+    purpose[0].outerHTML = '<div id="proposta" class="semi-titulos  abrir-chamado">\n                        <span class="nome-center">Enviar proposta</span><br>\n                        <textarea class="box-texto" cols="30" rows="3" type="text" wrap="hard" placeholder="Dê sua proposta"></textarea><br>\n                        <label for="preco">Informe o valor da proposta</label>\n                        <input id="preco" type="number" placeholder="R$ 00,00"><br>\n                        </div>'
+}
